@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="10dp"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Edit Data"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:hint="ID"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:textColorHint="#fff"
+        android:drawableEnd="@drawable/ic_username"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_sampul"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:hint="Sampul"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:textColorHint="#fff"
+        android:drawableEnd="@drawable/ic_username"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:hint="Nama"
+        android:textSize="20sp"
+        android:textColorHint="#fff"
+        android:drawableEnd="@drawable/ic_password"
+        android:inputType="text"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_pengarang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:hint="Pengarang"
+        android:textSize="20sp"
+        android:textColorHint="#fff"
+        android:drawableEnd="@drawable/ic_password"
+        android:inputType="text"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_tahun"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:hint="Tahun Terbit"
+        android:textSize="20sp"
+        android:textColorHint="#fff"
+        android:drawableEnd="@drawable/ic_password"
+        android:inputType="text"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_isbn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:hint="ISBN"
+        android:textSize="20sp"
+        android:textColorHint="#fff"
+        android:drawableEnd="@drawable/ic_password"
+        android:inputType="text"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_login"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Update"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_login"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Delete"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_login"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Back"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

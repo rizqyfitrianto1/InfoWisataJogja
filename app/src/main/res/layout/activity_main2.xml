@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Main2Activity">
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#45FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_main">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/line_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/logo4"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Alwis Cruise"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:textSize="24sp"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="402dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_logo"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_border"
+                android:elevation="3dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search...">
+
+            </SearchView>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_below="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/circle_asia"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="Asia"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/circler_africa"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="Africa"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/circle_europe"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="Europe"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/circle_america"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="America"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_below="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="10dp"
+            android:elevation="10dp">
+
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:background="@color/white"
+                />
+        </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_destination"
+                android:layout_below="@id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cruise Destinations"
+                android:fontFamily="@font/nunito_extralight"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_below="@+id/txt_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cruise_logo4"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#45000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableEnd="@drawable/ic_username"
+            android:fontFamily="@font/nunito_extralight"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittextstyle"
+            android:drawableEnd="@drawable/ic_password"
+            android:fontFamily="@font/nunito_extralight"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="Forgot your password ?"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_login"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_width="270dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/bg_facebook">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_facebook"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="Connect with Facebook"-->
+        <!--android:fontFamily="@font/nunito_extralight"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textStyle="bold"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_width="270dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/bg_facebook">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_goole"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Connect with Google"-->
+        <!--android:fontFamily="@font/nunito_extralight"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textStyle="bold"/>-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logologo"/>
+
+    <TextView
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Alwis Cruise"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2E3F97"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        />
+
+    <TextView
+        android:id="@+id/to_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't you have an account? Sign Up"
+        android:fontFamily="@font/nunito_extralight"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

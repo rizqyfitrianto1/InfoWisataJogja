@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/cruise_logo4"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#45000000">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:hint="Username"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:textColorHint="#fff"
+            android:fontFamily="@font/nunito_extralight"
+            android:drawableEnd="@drawable/ic_username"
+            android:background="@drawable/edittextstyle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:hint="E-mail address"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#fff"
+            android:fontFamily="@font/nunito_extralight"
+            android:drawableEnd="@drawable/ic_email"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:textColorHint="#fff"
+            android:fontFamily="@font/nunito_extralight"
+            android:drawableEnd="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logologo"/>
+
+    <TextView
+        android:id="@+id/text_logo"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Alwis Cruise"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2E3F97"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        />
+
+    <TextView
+        android:id="@+id/back_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have an account? Login"
+        android:fontFamily="@font/nunito_extralight"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
